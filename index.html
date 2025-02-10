@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <button class="btn-class-name" onclick="showPopup()">
+        <span class="back"></span>
+        <span class="front"></span>
+      </button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div>
+            <h2 class="question">❤️ Will You Be My Valentine? ❤️</h2>
+        <button class="close-button" onclick="closePopup()">Close</button>
+        </div>
+        <div class="yes-or-no-button">
+            <div class="button1">
+                <button id="bottone1" onclick="window.location.href='index2.html'"><strong>Yes</strong></button>
+                <div>
+                    <img src="love-exited.gif" alt="" class="love-exited">
+                </div>
+            </div>
+            <div class="button2">
+                <button id="bottone1" onclick="window.location.href='index3.html'"><strong>No</strong></button>
+                <div>
+                    <img src="sad-face.gif" alt="Cat Laughing" class="sad-face">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function showPopup() {
+        document.getElementById("popup").classList.add("visible");
+      }
+
+      function closePopup() {
+        document.getElementById("popup").classList.remove("visible");
+      }
+    </script>
+  </body>
+  
+</html>
